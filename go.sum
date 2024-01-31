@@ -2,6 +2,8 @@ github.com/A11Might/lark_docx_md v0.0.0-20240128040359-eea7c132ea06 h1:InYOjqAtQ
 github.com/A11Might/lark_docx_md v0.0.0-20240128040359-eea7c132ea06/go.mod h1:oMZ2pFivmwCfUL4ZszpuGYlRAXOzHW8YFi9Z/csvcq4=
 github.com/A11Might/lark_docx_md v0.0.0-20240130072712-d0bdc1e7e40d h1:5xK7mSKowHMjrm8p67/VpFUgwPjQFMWx0kP3zN0A7BY=
 github.com/A11Might/lark_docx_md v0.0.0-20240130072712-d0bdc1e7e40d/go.mod h1:oMZ2pFivmwCfUL4ZszpuGYlRAXOzHW8YFi9Z/csvcq4=
+github.com/A11Might/lark_docx_md v0.0.0-20240131122119-02ef08526cd4 h1:9iF39jMxuS57EV3N3N8Xv3sLFRYWPYDalAzAleKlmyU=
+github.com/A11Might/lark_docx_md v0.0.0-20240131122119-02ef08526cd4/go.mod h1:vrIaGw0DN3HEMK2Y7MMyNsxsBmj4TQwiToTu4S9thUE=
 github.com/larksuite/oapi-sdk-go/v3 v3.1.2 h1:jZJU54EXbvH13q7bF3b+Kj9iuxfc7wm9Uk9P6arSmco=
 github.com/larksuite/oapi-sdk-go/v3 v3.1.2/go.mod h1:F4MLXkfdc/7WAJPLy4lJ0R6VqCxKgqWYS1uYY84p3SI=
 github.com/samber/lo v1.39.0 h1:4gTz1wUhNYLhFSKl6O+8peW0v2F4BCY034GRpU9WnuA=

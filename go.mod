@@ -3,7 +3,7 @@ module github.com/A11Might/lark-docx-readme
 go 1.20
 
 require (
-	github.com/A11Might/lark_docx_md v0.0.0-20240130072712-d0bdc1e7e40d
+	github.com/A11Might/lark_docx_md v0.0.0-20240131122119-02ef08526cd4
 	github.com/larksuite/oapi-sdk-go/v3 v3.1.2
 )
 
