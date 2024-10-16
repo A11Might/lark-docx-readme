@@ -6,19 +6,19 @@ name: pares docx into readme
 on:
   # run automatically every 24 hours
   # schedule:
-  #   - cron: "0 */24 * * *" 
-  
+  #   - cron: "0 */24 * * *"
+
   # allows to manually run the job at any time
   workflow_dispatch:
-  
+
   # run on every push on the master branch
   push:
     branches:
-    - main
+      - main
 
 jobs:
   update_readme:
-    permissions: 
+    permissions:
       contents: write
     runs-on: ubuntu-latest
     name: use docx update readme
@@ -30,6 +30,7 @@ jobs:
         env:
           APP_ID: ${{ secrets.APP_ID }}
           APP_SECRET: ${{ secrets.APP_SECRET }}
+          DOCUMENT_TYPE: ${{ secrets.DOCUMENT_TYPE }}
           DOCUMENT_ID: ${{ secrets.DOCUMENT_ID }}
       - name: push changes
         run: |
