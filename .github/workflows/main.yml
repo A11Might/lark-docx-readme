@@ -12,9 +12,9 @@ on:
   workflow_dispatch:
 
   # run on every push on the master branch
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   update_readme:
@@ -25,17 +25,19 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+
       - name: generate readme
-        uses: A11Might/lark-docx-readme@main
+        uses: ./
         env:
           APP_ID: ${{ secrets.APP_ID }}
           APP_SECRET: ${{ secrets.APP_SECRET }}
           DOCUMENT_TYPE: ${{ secrets.DOCUMENT_TYPE }}
           DOCUMENT_ID: ${{ secrets.DOCUMENT_ID }}
+
       - name: push changes
         run: |
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          git add .
+          git add README.md
           git commit -m "This is an automated commit by GitHub Actions."
           git push
