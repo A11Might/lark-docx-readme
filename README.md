@@ -16,20 +16,20 @@ name: pares docx into readme
 
 on:
   # run automatically every 24 hours
-  schedule:
-     - cron: "0 */24 * * *" 
-  
+  # schedule:
+  #   - cron: "0 */24 * * *"
+
   # allows to manually run the job at any time
   workflow_dispatch:
-  
+
   # run on every push on the master branch
   push:
     branches:
-    - main
+      - main
 
 jobs:
   update_readme:
-    permissions: 
+    permissions:
       contents: write
     runs-on: ubuntu-latest
     name: use docx update readme
@@ -39,9 +39,9 @@ jobs:
       - name: generate readme
         uses: A11Might/lark-docx-readme@main
         env:
-          # need set actions secrets and variables first
           APP_ID: ${{ secrets.APP_ID }}
           APP_SECRET: ${{ secrets.APP_SECRET }}
+          DOCUMENT_TYPE: ${{ secrets.DOCUMENT_TYPE }}
           DOCUMENT_ID: ${{ secrets.DOCUMENT_ID }}
       - name: push changes
         run: |
@@ -52,7 +52,7 @@ jobs:
           git push
 ```
 
-*Inspired by *[*jamesgeorge007/github-activity-readme*](https://github.com/jamesgeorge007/github-activity-readme)
+*Inspired by [jamesgeorge007/github-activity-readme](https://github.com/jamesgeorge007/github-activity-readme)*
 
-
-
+***
+_This MARKDOWN was generated with ❤️ by [lark_docx_md](https://github.com/A11Might/lark_docx_md)_
